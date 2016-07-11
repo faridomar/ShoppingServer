@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="357.0" prefWidth="463.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shoppingserver.FXMLDocumentController">
+    <children>
+        <Button fx:id="btnExit" layoutX="21.0" layoutY="307.0" onAction="#handleButtonAction" onKeyPressed="#handleButtonAction" prefHeight="25.0" prefWidth="404.0" text="Stop" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label contentDisplay="CENTER" layoutX="112.0" layoutY="24.0" prefHeight="25.0" prefWidth="32.0" text="port" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" />
+      <TextField fx:id="txtport" disable="true" layoutX="144.0" layoutY="24.0" prefHeight="25.0" prefWidth="95.0" />
+      <Label contentDisplay="CENTER" layoutX="269.0" layoutY="24.0" prefHeight="25.0" prefWidth="32.0" text="ip" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" />
+      <TextField fx:id="txtip" disable="true" layoutX="301.0" layoutY="24.0" prefHeight="25.0" prefWidth="95.0" />
+      <MenuButton fx:id="mnusetting" layoutX="14.0" layoutY="24.0" mnemonicParsing="false" text="Options">
+        <items>
+          <MenuItem fx:id="mnuchangeportip" mnemonicParsing="false" onAction="#mnuchangeportAction" text="set/change port " />
+          <MenuItem fx:id="mnugenerateqr" mnemonicParsing="false" onAction="#mnugenerateqrAction" text="Generate QR" />
+          <MenuItem fx:id="mnuedit" mnemonicParsing="false" onAction="#mnuidAction" text="Edit/Delete" />
+        </items>
+      </MenuButton>
+      <Separator layoutX="14.0" layoutY="62.0" prefHeight="17.0" prefWidth="449.0" />
+      <Separator layoutX="7.0" layoutY="292.0" prefHeight="0.0" prefWidth="449.0" />
+      <Separator layoutX="280.0" layoutY="70.0" orientation="VERTICAL" prefHeight="224.0" prefWidth="9.0" />
+      <Label layoutX="14.0" layoutY="71.0" prefHeight="34.0" prefWidth="89.0" text="Add Commodity" />
+      <Label layoutX="14.0" layoutY="120.0" prefHeight="34.0" prefWidth="52.0" text="Name" />
+      <Label layoutX="14.0" layoutY="159.0" prefHeight="34.0" prefWidth="52.0" text="Price" />
+      <Label layoutX="14.0" layoutY="193.0" prefHeight="34.0" prefWidth="52.0" text="barcode" />
+      <TextField fx:id="txtName" layoutX="66.0" layoutY="125.0" prefHeight="25.0" prefWidth="203.0" />
+      <TextField fx:id="txtPrice" layoutX="66.0" layoutY="164.0" prefHeight="25.0" prefWidth="203.0" />
+      <TextField fx:id="txtbarcode" layoutX="66.0" layoutY="198.0" prefHeight="25.0" prefWidth="203.0" />
+      <Button fx:id="btnAddCommodity" layoutX="66.0" layoutY="258.0" mnemonicParsing="false" onAction="#btnAddCommodityAction" prefHeight="25.0" prefWidth="203.0" text="Add" />
+      <Label layoutX="307.0" layoutY="71.0" prefHeight="34.0" prefWidth="69.0" text="Add Device" />
+      <Label layoutX="307.0" layoutY="121.0" prefHeight="34.0" prefWidth="32.0" text="ID  :  " textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" />
+      <TextField fx:id="txtid" layoutX="294.0" layoutY="164.0" prefHeight="25.0" prefWidth="150.0" />
+      <Button fx:id="btnAddDevice" layoutX="294.0" layoutY="258.0" mnemonicParsing="false" onAction="#btnAddAction" prefHeight="25.0" prefWidth="150.0" text="Add" />
+      <Button fx:id="btnSetPort" layoutX="403.0" layoutY="24.0" mnemonicParsing="false" onAction="#btnSetPortAction" prefHeight="25.0" prefWidth="44.0" text="Set" visible="false" />
+      <Label layoutX="14.0" layoutY="223.0" prefHeight="34.0" prefWidth="52.0" text="Count" />
+      <TextField fx:id="txtcount" layoutX="66.0" layoutY="228.0" prefHeight="25.0" prefWidth="203.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shoppingserver.FXMLDocumentController">
+   <children>
+      <Label layoutX="21.0" layoutY="14.0" prefHeight="37.0" prefWidth="101.0" text="GENERATE QR" />
+      <Label layoutX="21.0" layoutY="78.0" prefHeight="29.0" prefWidth="52.0" text="CODE" />
+      <Label layoutX="21.0" layoutY="132.0" prefHeight="37.0" prefWidth="52.0" text="PATH" />
+      <TextField fx:id="txtCode" layoutX="73.0" layoutY="80.0" prefHeight="25.0" prefWidth="157.0" />
+      <TextField fx:id="txtPath" layoutX="72.0" layoutY="132.0" prefHeight="25.0" prefWidth="157.0" />
+      <Button fx:id="btnGenerate" layoutX="22.0" layoutY="245.0" mnemonicParsing="false" onAction="#btngenerateAction" prefHeight="25.0" prefWidth="208.0" text="Generate" />
+      <ImageView fx:id="imgqr" fitHeight="220.0" fitWidth="288.0" layoutX="266.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btndone" layoutX="258.0" layoutY="347.0" mnemonicParsing="false" onAction="#btndoneActoin" prefHeight="25.0" prefWidth="288.0" text="DONE" />
+      <Button fx:id="btnbrowse" layoutX="168.0" layoutY="157.0" mnemonicParsing="false" onAction="#btnbrowseAction" text="Browse..." />
+   </children>
+</AnchorPane>

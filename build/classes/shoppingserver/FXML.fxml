@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shoppingserver.FXMLDocumentController">
+   <children>
+      <Button fx:id="btnConfirm" layoutX="341.0" layoutY="304.0" mnemonicParsing="false" onAction="#btnConfirmAction" prefHeight="25.0" prefWidth="201.0" text="Confirm" />
+      <Button fx:id="btncancel" layoutX="59.0" layoutY="304.0" mnemonicParsing="false" onAction="#btncancelAction" prefHeight="25.0" prefWidth="201.0" text="cancel" />
+      <TextArea fx:id="txtshop" layoutX="58.0" layoutY="61.0" prefHeight="200.0" prefWidth="484.0" />
+   </children>
+</AnchorPane>

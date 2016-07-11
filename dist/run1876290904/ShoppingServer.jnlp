@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ShoppingServer.jnlp">
+  <information>
+    <title>ShoppingServer</title>
+    <vendor>Farid omar</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="2.2+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ShoppingServer.jar" size="39055" download="eager" />
+    <jar href="lib/mysql-connector-java-5.1.21.jar" size="827942" download="eager" />
+    <jar href="lib/qrgen-1.0.jar" size="4932" download="eager" />
+    <jar href="lib/zxing-core-1.7.jar" size="352719" download="eager" />
+    <jar href="lib/zxing-j2se-1.7.jar" size="22051" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="ShoppingServer" >
+    <param name="requiredFXVersion" value="2.2+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="shoppingserver.ShoppingServer"  name="ShoppingServer" />
+  <update check="always"/>
+</jnlp>
